@@ -1,0 +1,36 @@
+h1 {
+	font-family: "Raleway",sans-serif;
+	color: #F3F315;
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+	margin-left: 35%;
+	font-size: 100px;
+}
+h2 {
+	font-family: "Raleway",sans-serif;
+	color: #f4f42d;
+	margin-left: 32%;
+	font-size: 25px;
+}
+p {
+	font-family: "Raleway",sans-serif;
+	color: #e3e30c;
+	margin-left: 40%;
+}
+.Descriptions{
+	font-family: "Raleway",sans-serif;
+	color: #f7f75e;
+	margin-left: 32%;
+}
+.Links{
+	margin-left: 40%;
+}
+body {
+	background-color: #111;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Raleway Thin'), local('Raleway-Thin'), url(https://fonts.gstatic.com/s/raleway/v9/RJMlAoFXXQEzZoMSUteGWFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
