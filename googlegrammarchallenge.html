@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Grammar Challenge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1 id = 'grammarChallenge' >Google Grammar Challenge </h1>
+    <input type = "text" id = 'grammar' height  = '30dp'></input>
+    <input type = "text" id="translation"></div>
+    <br>
+    <button id = "translate" onclick = 'translateInput();'>translate</button>
+    
+    <script>
+      function translateText(response) {
+        document.getElementById("translation").value = response.data.translations[0].translatedText;
+        console.log(response);
+      }
+      function translateInput() {
+      var newScript = document.createElement('script');
+      newScript.type = 'text/javascript';
+      var sourceText = document.getElementById("grammar").value;
+      // WARNING: Your API key will be visible in the page source.
+      // To prevent misuse, restrict your key to designated domains or use a
+      // proxy to hide your key.
+      var source = 'https://www.googleapis.com/language/translate/v2?key=AIzaSyA6FUDOasaqDLCtmUA5tXdf7G1TMJyyDKE&source=en&target=de&callback=translateText&q=' + sourceText;
+      newScript.src = source;
+      document.getElementsByTagName('head')[0].appendChild(newScript);
+      }
+    </script>
+  </body>
+</html> 

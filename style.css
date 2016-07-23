@@ -34,3 +34,24 @@ body {
   font-weight: 100;
   src: local('Raleway Thin'), local('Raleway-Thin'), url(https://fonts.gstatic.com/s/raleway/v9/RJMlAoFXXQEzZoMSUteGWFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
 }
+
+#grammar {
+	height: 200px;
+	width: 50%;
+}
+
+#translation{
+	height: 200px;
+	width: 45%;
+}
+
+#translate {
+	height: 50px;
+	width: 50.5%;
+}
+
+#grammarChallenge {
+	text-align: center;
+	font-size: 50px;
+	margin-left: 0%;
+}
